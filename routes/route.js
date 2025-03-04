@@ -32,3 +32,6 @@ app.put('/workout/:id',(req, res) => {
     .then(workout => res.json(workout))
     .catch(err => res.status(404).json({ message: 'Workout not found' }));
 });
+
+module.exports = router;
+
